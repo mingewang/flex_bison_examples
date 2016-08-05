@@ -21,7 +21,7 @@ all:  ${TARGET}
 clean:
 	@rm -rf $(TARGET)
 	@rm -rf *.o
-	@rm -rf calc++-parser.cc calc++-scanner.cc location.hh position.hh stack.hh
+	@rm -rf calc++-parser.cc calc++-parser.hh calc++-scanner.cc location.hh position.hh stack.hh
 
 ${TARGET}: ${CPPOBJS}
 	$(CXX) $(LDFLAGS) -o $@ $^
